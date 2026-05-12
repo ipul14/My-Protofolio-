@@ -3,12 +3,12 @@ import os
 
 st.set_page_config(
     page_title="Muchamad Nur Syaifulrahman | Portfolio",
-    page_icon="✈️",
+    page_icon=" ",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-st.title("✈️ Muchamad Nur Syaifulrahman")
+st.title("Muchamad Nur Syaifulrahman")
 st.caption("Airport Operation Management • AMC Officer • Weda Bay Airport")
 
 html_path = "Portofolio Muchamad Nur Syaifulrahman.html"
