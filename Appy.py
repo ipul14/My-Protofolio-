@@ -1,11 +1,5 @@
 import streamlit as st
 import os
-
-st.set_page_config(
-    page_title="Muchamad Nur Syaifulrahman | Portfolio",
-    page_icon=" ",
-    layout="wide",
-    initial_sidebar_state="collapsed"
 )
 
 st.title("Muchamad Nur Syaifulrahman")
@@ -24,7 +18,6 @@ if os.path.exists(html_path):
         width=None
     )
     
-    st.success("✅ Portfolio berhasil dimuat")
     
 else:
     st.error("❌ File HTML tidak ditemukan!")
