@@ -1,10 +1,19 @@
 import streamlit as st
 import os
+
+st.set_page_config(
+    page_title="Muchamad Nur Syaifulrahman | Portfolio",
+    page_icon="👨‍✈️",
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
+# Judul
 st.title("Muchamad Nur Syaifulrahman")
-st.caption("Airport Operation Management • AMC Officer • Weda Bay Airport")
+st.markdown("**Airport Operation Management • Apron Movement Control Officer**")
+st.caption("PT. Indonesia Weda Bay Industrial Park — Weda Bay Airport")
 
+# Path file HTML
 html_path = "Portofolio Muchamad Nur Syaifulrahman.html"
 
 if os.path.exists(html_path):
@@ -13,13 +22,9 @@ if os.path.exists(html_path):
     
     st.components.v1.html(
         html_content,
-        height=1800,      # Tinggi yang cukup untuk portfolio
-        scrolling=True,
-        width=None
+        height=1900,      # Tinggi disesuaikan
+        scrolling=True
     )
-    
-    
 else:
-    st.error("❌ File HTML tidak ditemukan!")
-    st.write(f"Path yang dicari: `{html_path}`")
-    st.info("Pastikan nama file persis sama (termasuk spasi)")
+    st.error("File HTML tidak ditemukan!")
+    st.write("Pastikan nama file adalah: `Portofolio Muchamad Nur Syaifulrahman.html`")
